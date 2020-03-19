@@ -1,6 +1,6 @@
 package temaCTS;
 
-public class Lectie {
+public class Lectie implements EvaluareInterface{
 	private int id;
 	private String titlu;
 	private String textulLectiei;
@@ -10,6 +10,13 @@ public class Lectie {
 		this.id = id;
 		this.titlu = titlu;
 		this.textulLectiei = textulLectiei;
+	}
+
+
+	@Override
+	public void evalueaza() {
+		System.out.println("E timpul sa testam cunostintele acumulate! Mult succes!");
+		
 	}
 	
 	
